@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 1vw;    
+
+    @media (min-width:$w-max) {
+        font-size: 22px;
+        body {
+            &>* {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100rem;                
+            }            
+        }
+    }
+}
+
+//* { border: 1px solid #fff !important; }
+
+@import 'header.scss';
+@import 'sections/main.scss';
+@import 'footer.scss';
